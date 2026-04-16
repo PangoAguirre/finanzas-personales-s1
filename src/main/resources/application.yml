@@ -4,7 +4,7 @@ server:
 
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5433/finanzasdb}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://finanzas-postgres:5432/finanzasdb}
     username: ${SPRING_DATASOURCE_USERNAME:finanzas_user}
     password: ${SPRING_DATASOURCE_PASSWORD:mypassword123}
     driver-class-name: org.postgresql.Driver
