@@ -4,10 +4,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/finanzasdb
-    username: finanzas_user
-    password: "mypassword123"
-    driver-class-name: org.postgresql.Driver
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
 
   jpa:
     hibernate:
